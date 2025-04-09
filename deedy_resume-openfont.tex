@@ -1,0 +1,288 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \namesection{}{Raahul Singh}{ \urlstyle{same}
+% \href{mailto:raahulsingh002@gmail.com}{raahulsingh002@gmail.com} | (+91)8279969625 | 
+% }
+\namesection{}{Raahul Singh}{ \urlstyle{same}
+\href{mailto:raahulsingh002@gmail.com}{raahulsingh002@gmail.com} | (+91) 8279969625 | (+44) 7554539930 \\
+% \small Address: Flat 5, Tower 1, Prakriti Heights Apartments, ITBP Road, near Seemadwar, Dehradun, Uttarakhand, India. Pin: 248146
+% }
+ Dehradun | London
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{IIIT Sri City}
+\descript{BTech in Computer Science \\
+and Engineering}
+\location{ Cum. GPA: 8.43 / 10}
+\location{August 2018 - 2022 | India}
+\sectionsep
+
+
+\subsection{St. Jude's School}
+\location{Grad. May 2017 |  Dehradun, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+% Facebook:// \href{https://facebook/dd}{\bf dd} \\
+Github: \href{https://github.com/Raahul-Singh}{\bf Raahul-Singh} \\
+GitLab:  \href{https://gitlab.com/rasalghul2}{\bf rasalghul2} \\
+LinkedIn:  \href{https://linkedin.com/in/raahulsingh42}{\bf raahulsingh42} \\
+Substack:  \href{https://raahulsingh.substack.com}{\bf pathfinder} \\
+Medium:  \href{https://medium.com/@_hawks_}{\bf @raahulsingh42} \\
+
+
+% YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+% Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+% Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+% \subsection{Graduate}
+% Advanced Machine Learning \\
+% Open Source Software Engineering \\
+% Advanced Interactive Graphics \\
+% Compilers + Practicum \\
+% Cloud Computing \\
+% Evolutionary Computation \\
+% Defending Computer Networks \\
+% Machine Learning \\
+% \sectionsep
+
+\subsection{Undergraduate}
+\textbullet{}Deep Learning \\
+\textbullet{}Artificial Intelligence \\
+\textbullet{}Machine Learning \\
+\textbullet{}Object Oriented Programming \\
+\textbullet{}Information Retrieval \\
+\textbullet{}Service Oriented Application Development  \\
+\sectionsep
+
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+Python \\
+\location{Frameworks:}
+Pytorch  \textbullet{} Numpy \\
+Pandas  \textbullet{} PyGame  \\
+SunPy \textbullet{}
+\location{Tools:}
+Git  \textbullet{} Bash \\
+\location{Familiar:}
+SQL  \textbullet{} Java
+\sectionsep
+
+\subsection{Public Speaking}
+\location{English Debate}
+\textbullet{} First Prize among speakers from 33 countries. \\
+International English Debate QUANTA (2016) \\
+City Montessori School, Lucknow, India \\
+\textbullet{} Over 7 years of Inter School and District English Debating experience.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research and Engineering Experience}
+\runsubsection{\lowercase{\href{https://www.phaidra.ai/}}{Phaidra}}
+\descript{\\Senior AI Research Engineer}
+\location{August 2020 - Present}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+        \item {Worked on incorporating causal inference techniques to reduce biases in learned models.}
+        \item {Worked on data agnostic techniques for enforcing known first principle domain knowledge learning in deep neural nets.}
+        \item {Worked on ML Observability and Domain Specific Model Performance monitoring.}
+        \item {Implemented solutions for dealing with Large Action Spaces in decision problems.}
+        \item {Worked within Research and Engineering teams, designing and developing tools to bring cutting edge in house research to production.}
+        \item {Achieved 15x accuracy in time series prediction tasks using 30x less data, for 2x and 3x variable prediction horizons}
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Coursera}
+% \descript{| KPCB Fellow + Software Engineering Intern }
+% \location{June 2014 – Sep 2014 | Mountain View, CA}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
+% \item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
+% \item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+% \end{tightemize}
+% \sectionsep
+
+\runsubsection{\lowercase{\href{https://summerofcode.withgoogle.com/archive/2020/projects/4893913812303872/}}{Google Summer Of Code '20 @ SunPy (OpenAstronomy)}}
+\descript{ Student Developer }
+\location{May 2020 – July 2020}
+\begin{tightemize}
+        \item {Developed models for forecasting the likelihood that an Active Region on the sun would produce a solar flare in the near future.}
+        \item {A Search Events object capable of querying and matching data from HFC, HEK and HELIO databases was created.
+        }
+        \item {{\lowercase{\href{https://gist.github.com/Raahul-Singh/907e5af7c568a94cbb313200f034916f}}{\textbf{\emph{Link to an overview of deliverables.}}}}}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Indian Institute of Technology, Roorkee}
+\descript{\\ Machine Learning Intern @ The Biotech Department }
+\location{May 2019 - July 2019}
+\begin{tightemize}
+        \item{Under the guidance of \lowercase{\href{https://www.iitr.ac.in/~BT/debsrfbt}}{\textbf{Dr. Debabrata Sircar}}, implemented standard machine learning algorithms to train on biochemical sensor data to predict shelf-life of edible fruits.}
+        \item {Worked on data analysis of volatile chemicals of fruits, to understand the biological parameters that affect post-harvest storage and nutritional qualities of fruits.}
+\end{tightemize}
+\sectionsep
+
+
+% \runsubsection{Phabricator}
+% \descript{| Open Source Contributor \& Team Leader}
+% \location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+% \begin{tightemize}
+% \item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+% \item I created the Meme generator and more in PHP and Shell.
+% \item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROJECTS}
+\runsubsection{\lowercase{\href{https://github.com/Raahul-Singh/games-and-ai/tree/master/tictactoe}}{Open Tic Tac Toe and Game Playing AI}}
+\descript{}
+% \location{ }
+\begin{tightemize}
+        \item {An order of \(10^{37}\) less state searches for a board size of 7 and win score of 3, for the third move of the game vs vanilla minimax. Uses limiting Field of View, spatial locality heuristic and the  randomisation of search moves to play near optimally and with a near constant speed irrespective of the board size.}
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
