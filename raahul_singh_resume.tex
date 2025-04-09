@@ -1,0 +1,127 @@
+% Raahul Singh Resume
+% Based on Deedy Resume Template
+% IMPORTANT: Compile with XeLaTeX
+
+\documentclass[]{raahul_singh_resume}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+% TITLE NAME
+\namesection{}{Raahul Singh}{ \urlstyle{same}
+\href{mailto:raahulsingh002@gmail.com}{raahulsingh002@gmail.com} | (+91) 8279969625 | (+44) 7554539930 \\
+Dehradun | London
+}
+
+% COLUMN ONE
+\begin{minipage}[t]{0.33\textwidth} 
+
+% EDUCATION
+\section{Education} 
+
+\subsection{IIIT Sri City}
+\descript{BTech in Computer Science \\
+and Engineering}
+\location{ Cum. GPA: 8.43 / 10}
+\location{August 2018 - 2022 | India}
+\sectionsep
+
+\subsection{St. Jude's School}
+\location{Grad. May 2017 |  Dehradun, India}
+\sectionsep
+
+% LINKS
+\section{Links} 
+Github: \href{https://github.com/Raahul-Singh}{\bf Raahul-Singh} \\
+GitLab:  \href{https://gitlab.com/rasalghul2}{\bf rasalghul2} \\
+LinkedIn:  \href{https://linkedin.com/in/raahulsingh42}{\bf raahulsingh42} \\
+Substack:  \href{https://raahulsingh.substack.com}{\bf pathfinder} \\
+Medium:  \href{https://medium.com/@_hawks_}{\bf @raahulsingh42} \\
+
+% COURSEWORK
+\section{Coursework}
+\subsection{Undergraduate}
+\textbullet{}Deep Learning \\
+\textbullet{}Artificial Intelligence \\
+\textbullet{}Machine Learning \\
+\textbullet{}Object Oriented Programming \\
+\textbullet{}Information Retrieval \\
+\textbullet{}Service Oriented Application Development  \\
+\sectionsep
+
+% SKILLS
+\section{Skills}
+\subsection{Programming}
+Python \\
+\location{Frameworks:}
+Pytorch  \textbullet{} Numpy \\
+Pandas  \textbullet{} PyGame  \\
+SunPy \textbullet{}
+\location{Tools:}
+Git  \textbullet{} Bash \\
+\location{Familiar:}
+SQL  \textbullet{} Java
+\sectionsep
+
+\subsection{Public Speaking}
+\location{English Debate}
+\textbullet{} First Prize among speakers from 33 countries. \\
+International English Debate QUANTA (2016) \\
+City Montessori School, Lucknow, India \\
+\textbullet{} Over 7 years of Inter School and District English Debating experience.
+\sectionsep
+
+% COLUMN TWO
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+% EXPERIENCE
+\section{Research and Engineering Experience}
+\runsubsection{\lowercase{\href{https://www.phaidra.ai/}}{Phaidra}}
+\descript{\\Senior AI Research Engineer}
+\location{August 2020 - Present}
+\vspace{\topsep}
+\begin{tightemize}
+        \item {Worked on incorporating causal inference techniques to reduce biases in learned models.}
+        \item {Worked on data agnostic techniques for enforcing known first principle domain knowledge learning in deep neural nets.}
+        \item {Worked on ML Observability and Domain Specific Model Performance monitoring.}
+        \item {Implemented solutions for dealing with Large Action Spaces in decision problems.}
+        \item {Worked within Research and Engineering teams, designing and developing tools to bring cutting edge in house research to production.}
+        \item {Achieved 15x accuracy in time series prediction tasks using 30x less data, for 2x and 3x variable prediction horizons}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\lowercase{\href{https://summerofcode.withgoogle.com/archive/2020/projects/4893913812303872/}}{Google Summer Of Code '20 @ SunPy (OpenAstronomy)}}
+\descript{ Student Developer }
+\location{May 2020 – July 2020}
+\begin{tightemize}
+        \item {Developed models for forecasting the likelihood that an Active Region on the sun would produce a solar flare in the near future.}
+        \item {A Search Events object capable of querying and matching data from HFC, HEK and HELIO databases was created.}
+        \item {{\lowercase{\href{https://gist.github.com/Raahul-Singh/907e5af7c568a94cbb313200f034916f}}{\textbf{\emph{Link to an overview of deliverables.}}}}}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Indian Institute of Technology, Roorkee}
+\descript{\\ Machine Learning Intern @ The Biotech Department }
+\location{May 2019 - July 2019}
+\begin{tightemize}
+        \item{Under the guidance of \lowercase{\href{https://www.iitr.ac.in/~BT/debsrfbt}}{\textbf{Dr. Debabrata Sircar}}, implemented standard machine learning algorithms to train on biochemical sensor data to predict shelf-life of edible fruits.}
+        \item {Worked on data analysis of volatile chemicals of fruits, to understand the biological parameters that affect post-harvest storage and nutritional qualities of fruits.}
+\end{tightemize}
+\sectionsep
+
+% PROJECTS
+\section{PROJECTS}
+\runsubsection{\lowercase{\href{https://github.com/Raahul-Singh/games-and-ai/tree/master/tictactoe}}{Open Tic Tac Toe and Game Playing AI}}
+\descript{}
+\begin{tightemize}
+        \item {An order of \(10^{37}\) less state searches for a board size of 7 and win score of 3, for the third move of the game vs vanilla minimax. Uses limiting Field of View, spatial locality heuristic and the randomisation of search moves to play near optimally and with a near constant speed irrespective of the board size.}
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document} 
